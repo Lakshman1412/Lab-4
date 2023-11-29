@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunrise Sunset Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Sunrise Sunset Dashboard</h1>
+    </header>
+
+    <main>
+        <section id="search-options">
+            <button id="geolocation-btn">Use Current Location</button>
+
+            <!-- For 441 Students -->
+            <select id="location-select">
+                <option value="New York">New York</option>
+                <option value="Los Angeles">Los Angeles</option>
+                <option value="Houston">Houston</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Boston">Boston</option>
+                <!-- Replace with Chicago -->
+                <option value="Chicago">Chicago</option>
+            </select>
+
+            <!-- For 541 Students -->
+            <input type="text" id="location-input" placeholder="Enter a location">
+
+            <button id="search-btn">Search</button>
+        </section>
+
+        <section id="dashboard">
+            <!-- Display sunrise, sunset, dawn, dusk, day length, solar noon, and timezone information here -->
+            <!-- Use divs, spans, or other appropriate HTML elements for data presentation -->
+        </section>
+
+        <section id="error-message" style="display: none;">
+            <!-- Display error messages here if there is an issue with the API request -->
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by <a href="https://sunrisesunset.io/api/" target="_blank">Sunrise Sunset API</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
